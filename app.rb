@@ -1,15 +1,16 @@
 require_relative 'helper'
 
 class App
-    def initialize
-        @books = BookModule.new
-    end
+  def initialize
+    @books = BookModule.new
+  end
 
-    attr_accessor :books
-    def user_menu
-        puts " "
-        puts 'Welcome to the Catalog of Things'
-        puts "Please Chose the following options:
+  attr_accessor :books
+
+  def user_menu
+    puts ' '
+    puts 'Welcome to the Catalog of Things'
+    puts "Please Chose the following options:
                     1. List all books
                     2. List all music albums
                     3. List all movies
@@ -23,49 +24,44 @@ class App
                     11. Add a movie
                     12. Add a game
                     13. Leave the catalog"
-        puts " "
-    end
-    def run()
-        user_menu
-        print("Please enter a number:")
-        user_input = gets.chomp.to_i
-        case user_input
-        when 1
-            list_books
-        when 2
-            list_all_music_albums
-        when 3
-            list_all_movies
-        when 4
-            list_all_games
-        when 5
-            list_all_genres
-        when 6
-            list_all_labels
-        when 7
-            list_all_authors
-        when 8
-            list_all_sources
-        when 9
-            add_a_book
-        when 10
-            add_a_music_album
-        when 11
-            add_a_movie
-        when 12
-            add_a_game
-        when 13
-            "leave the catalog"
-        end
-        return nil if user_input == 13
-        run
-    end
+    puts ' '
+  end
 
-    def list_books
-        @books.send(:list_all_books)
-    end
+  def user_choice(user_input)
+    @options = [
+      { user_choice: 1, action: :list_books },
+      { user_choice: 2, action: :list_all_music_albums },
+      { user_choice: 3, action: :list_all_movies },
+      { user_choice: 4, action: :list_all_games },
+      { user_choice: 5, action: :list_all_genres },
+      { user_choice: 6, action: :list_all_labels },
+      { user_choice: 7, action: :list_all_authors },
+      { user_choice: 8, action: :list_all_sources },
+      { user_choice: 9, action: :add_a_book },
+      { user_choice: 10, action: :add_a_music_album },
+      { user_choice: 11, action: :add_a_movie },
+      { user_choice: 12, action: :add_a_game }
+    ]
+    action = @options.find { |option| option[:user_choice] == user_input }&.[](:action)
+    send(action) if action
 
-    def add_a_book
-        @books.send(:add_book)
-    end
+    run
+  end
+
+  def run()
+    user_menu
+    print('Please enter a number:')
+    user_input = gets.chomp.to_i
+    return puts 'leave the catalog' if user_input >= 13
+
+    user_choice(user_input)
+  end
+
+  def list_books
+    @books.send(:list_all_books)
+  end
+
+  def add_a_book
+    @books.send(:add_book)
+  end
 end

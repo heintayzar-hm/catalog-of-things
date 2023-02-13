@@ -35,7 +35,7 @@ class BookModule
   def cover_state_handler(cover_state)
     return 'covered' if cover_state.downcase == 'y'
 
-    'not covered'
+    'bad'
   end
 
   def valid_date?(date_string)

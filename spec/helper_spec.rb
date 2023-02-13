@@ -1,4 +1,4 @@
-require_relative "../classes/book"
-require_relative "../classes/item"
-require_relative "../classes/label"
-require "date"
+require_relative '../classes/book'
+require_relative '../classes/item'
+require_relative '../classes/label'
+require 'date'

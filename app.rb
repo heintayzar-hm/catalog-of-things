@@ -2,7 +2,8 @@ require_relative 'helper'
 
 class App
   def initialize
-    @books = BookModule.new
+    @labels = LabelModule.new
+    @books = BookModule.new(@labels)
   end
 
   attr_accessor :books
@@ -63,5 +64,9 @@ class App
 
   def add_a_book
     @books.send(:add_book)
+  end
+
+  def list_all_labels
+    @labels.send(:list_all_labels)
   end
 end

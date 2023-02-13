@@ -1,0 +1,16 @@
+[
+  {
+    "id": 544,
+    "publish_date": "Sat 10 Oct 2020",
+    "publisher": "Hein",
+    "cover_state": "covered",
+    "label_id": 3
+  },
+  {
+    "id": 256,
+    "publish_date": "Sun 01 Oct 2000",
+    "publisher": "jo",
+    "cover_state": "not covered",
+    "label_id": 1
+  }
+]

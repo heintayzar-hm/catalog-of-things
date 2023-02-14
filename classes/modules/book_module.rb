@@ -5,7 +5,7 @@ class BookModule
   include ColorTerminal
 
   def initialize(labels)
-    @books = get_books
+    @books = load_books
     @labels = labels
   end
 

@@ -4,7 +4,7 @@ require_relative 'color'
 class LabelModule
   include ColorTerminal
   def initialize
-    @labels = get_labels
+    @labels = load_labels
   end
   attr_accessor :labels
 

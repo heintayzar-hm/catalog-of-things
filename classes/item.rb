@@ -23,7 +23,7 @@ class Item
     @author = author
     author.add_item(self) unless author.items.include?(self)
   end
-  
+
   def move_to_archive
     return unless can_be_archived?
 

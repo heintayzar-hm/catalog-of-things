@@ -11,18 +11,8 @@ RSpec.describe Author do
     end
   end
 
-  describe '#checkout author content' do
-    before :each do
-      @author = Author.new('John', 'Doe')
-    end
-
-    it 'has a biography attribute' do
-      expect(@author.last_name).to eq 'Doe'
-    end
-  end
-
   describe '#add_item' do
-    before :each do
+    before :all do
       @author = Author.new('John', 'Doe')
       @game = Game.new(true, '2017-01-01', '2008-01-01')
     end

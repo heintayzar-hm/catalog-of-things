@@ -1,4 +1,4 @@
-require './spec/spec_helper'
+require_relative 'spec_helper'
 
 RSpec.describe Game do
   before :all do

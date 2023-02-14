@@ -11,12 +11,17 @@ class Item
   end
 
   def can_be_archived?
-    Time.now.year - @publish_date.year > 10
+    (Time.now - @publish_date) > 10.years
   end
 
   def label=(label)
     @label = label
     label.add_item(self) unless label.items.include?(self)
+  end
+
+  def author=(author)
+    @author = author
+    author.add_item(self) unless author.items.include?(self)
   end
 
   def move_to_archive

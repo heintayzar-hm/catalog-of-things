@@ -1,5 +1,3 @@
-require_relative 'helper'
-
 class App
   def initialize
     @labels = LabelModule.new

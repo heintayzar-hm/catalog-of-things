@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
-Bundler.require(:default)
+Bundler.setup(:default)
 require 'active_support/all'
 require_relative '../classes/author'
 require_relative '../classes/game'

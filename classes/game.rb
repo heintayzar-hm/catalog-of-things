@@ -1,5 +1,5 @@
-require_relative 'item'
 require 'active_support/all'
+require_relative 'item'
 
 class Game < Item
   attr_accessor :multiplayer, :last_played

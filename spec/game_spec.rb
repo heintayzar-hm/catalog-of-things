@@ -13,7 +13,7 @@ RSpec.describe Game do
       expect(@game.last_played).to eq Time.parse('2017-01-01')
     end
     it 'has a publish_date attribute' do
-      expect(@game.publish_date).to be_a Time
+      expect(@game.publish_date).to be_a Date
     end
   end
 
@@ -28,7 +28,7 @@ RSpec.describe Game do
     end
 
     it 'returns false if last_played_at is less than 2 years ago' do
-      @game.last_played = Time.parse('2023-01-01')
+      @game.last_played = Date.parse('2023-01-01')
       expect(@game.can_be_archived?).to be false
     end
   end

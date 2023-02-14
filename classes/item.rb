@@ -11,7 +11,7 @@ class Item
   end
 
   def can_be_archived?
-    (Time.now - @publish_date) > 10.years
+    Time.now.year - @publish_date.year > 10
   end
 
   def label=(label)

@@ -1,5 +1,5 @@
-source "https://rubygems.org/"
+source 'https://rubygems.org/'
 
-gem 'rubocop', '>= 1.0', '< 2.0'
-gem 'rspec', '>=3.0', '< 4.0'
 gem 'activesupport'
+gem 'rspec', '>=3.0', '< 4.0'
+gem 'rubocop', '>= 1.0', '< 2.0'

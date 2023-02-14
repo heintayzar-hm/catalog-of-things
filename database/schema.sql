@@ -29,7 +29,7 @@ CREATE TABLE game (
   id SERIAL PRIMARY KEY,
   multiplayer BOOLEAN NOT NULL,
   last_played TIMESTAMP NOT NULL,
-   publish_date DATE NOT NULL,
+  publish_date DATE NOT NULL,
   archived BOOLEAN NOT NULL DEFAULT FALSE,
   label_id INTEGER REFERENCES label(id),
   author INTEGER REFERENCES author(id)

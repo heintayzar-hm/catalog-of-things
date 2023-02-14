@@ -1,7 +1,9 @@
 class App
   def initialize
     @labels = LabelModule.new
+    @authors = AuthorModule.new
     @books = BookModule.new(@labels)
+    @games = GameModule.new(@labels, @authors)
   end
 
   attr_accessor :books
@@ -54,6 +56,18 @@ class App
     return puts 'leave the catalog' if user_input >= 13
 
     user_choice(user_input)
+  end
+
+  def list_games
+    @games.send(:list_all_games)
+  end
+
+  def add_a_game
+    @games.send(:add_game)
+  end
+
+  def list_all_author
+    @author.list_all_authors
   end
 
   def list_books

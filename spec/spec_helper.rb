@@ -1,3 +1,2 @@
-require 'active_support/all'
-require './classes/author'
-require './classes/game'
+require_relative '../classes/author'
+require_relative'../classes/game'

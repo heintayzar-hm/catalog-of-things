@@ -2,7 +2,7 @@ require 'time'
 class Item
   attr_accessor :id, :publish_date, :archive
 
-  attr_reader :genre, :author, :source, :label
+  attr_reader :genre, :source, :label, :author
 
   def initialize(publish_date, archive)
     @id = rand(1..1000)
@@ -19,6 +19,11 @@ class Item
     label.add_item(self) unless label.items.include?(self)
   end
 
+  def author=(author)
+    @author = author
+    author.add_item(self) unless author.items.include?(self)
+  end
+  
   def move_to_archive
     return unless can_be_archived?
 

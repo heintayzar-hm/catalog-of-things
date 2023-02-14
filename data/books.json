@@ -26,5 +26,12 @@
     "publisher": "Hein",
     "cover_state": "bad",
     "label_id": 1
+  },
+  {
+    "id": 2,
+    "publish_date": "Mon 02 Dec 2002",
+    "publisher": "user_one",
+    "cover_state": "bad",
+    "label_id": 3
   }
 ]

@@ -54,6 +54,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
+  bundler (~> 2.2)
   rspec
   rubocop (>= 1.0, < 2.0)
 

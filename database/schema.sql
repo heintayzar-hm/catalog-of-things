@@ -1,5 +1,3 @@
-CREATE DATABASE catalog;
-
 CREATE TABLE label (
   id SERIAL PRIMARY KEY,
   title VARCHAR(255) NOT NULL,
@@ -15,20 +13,24 @@ CREATE TABLE books (
   publish_date DATE NOT NULL,
   archived BOOLEAN NOT NULL DEFAULT FALSE,
   label_id INTEGER REFERENCES label(id),
+  author INTEGER REFERENCES author(id),
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE Author (
+CREATE TABLE author (
   id SERIAL PRIMARY KEY,
   first_name VARCHAR(255) NOT NULL,
   last_name VARCHAR(255) NOT NULL,
-  items JSONB NOT NULL DEFAULT '[]',
+  items JSONB NOT NULL DEFAULT '{}'
 );
 
-CREATE TABLE Game (
+CREATE TABLE game (
   id SERIAL PRIMARY KEY,
   multiplayer BOOLEAN NOT NULL,
   last_played TIMESTAMP NOT NULL,
-  genre 
+   publish_date DATE NOT NULL,
+  archived BOOLEAN NOT NULL DEFAULT FALSE,
+  label_id INTEGER REFERENCES label(id),
+  author INTEGER REFERENCES author(id)
 );

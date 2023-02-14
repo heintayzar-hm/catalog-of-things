@@ -1,3 +1,5 @@
+require_relative 'helper'
+
 class App
   def initialize
     @labels = LabelModule.new
@@ -58,7 +60,7 @@ class App
     user_choice(user_input)
   end
 
-  def list_games
+  def list_all_games
     @games.send(:list_all_games)
   end
 
@@ -66,8 +68,8 @@ class App
     @games.send(:add_game)
   end
 
-  def list_all_author
-    @author.list_all_authors
+  def list_all_authors
+    @authors.send(:list_all_authors)
   end
 
   def list_books

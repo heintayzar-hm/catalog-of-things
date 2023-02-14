@@ -8,7 +8,7 @@ end
 
 def file_load
   folder = 'data'
-  files = ['books.json', 'labels.json'] # add file names here
+  files = ['books.json', 'labels.json', 'authors.json', 'games.json'] # add file names here
   FileUtils.mkdir_p(folder)
 
   files.each do |file|

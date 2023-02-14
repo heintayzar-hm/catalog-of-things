@@ -85,11 +85,12 @@ class GameModule
   def get_user_author(msg)
     @author.list_all_authors
     print msg
-    index = gets.chomp.to_i
-    if index <= @author.authors.length && index.positive?
-      @author.authors[index - 1]
+    name = gets.chomp.to_s
+    @author.authors.push(name) unless @author.authors.include?(name)
+    if @author.authors.include?(name)
+      name
     else
-      puts red('Invalid index')
+      puts red('Invalid author')
       get_user_author(msg)
     end
   end
@@ -100,10 +101,11 @@ class GameModule
     multiplayer = multiplayer_handler(get_user_string('Multiplayer (y/n): '))
     last_played = get_user_date('Last played (yyyy-mm-dd): ')
     publish_date = get_user_date('Publish date (yyyy-mm-dd): ')
-    label = get_user_label('Choose label: ')
-    author = get_user_author('Name the author: ')
+    # label = get_user_label('Choose label: ')
+    first_name = get_user_author('first name: ')
+    
     game = Game.new(multiplayer, last_played, publish_date)
-    game.label = label
+    # game.label = label
     game.author = author
     @games << game.to_hash
     write_games_to_file

@@ -1,5 +1,4 @@
-require 'json'
-require_relative 'color'
+require_relative 'helper_module'
 
 class LabelModule
   include ColorTerminal
@@ -20,5 +19,9 @@ class LabelModule
     @labels.each_with_index do |label, index|
       puts "#{blue((index + 1).to_s)}) Title: #{blue(label['title'])}, Color: #{blue(label['color'])}"
     end
+  end
+
+  def get_label(id)
+    @labels.find { |label| label['id'] == id }['title']
   end
 end

@@ -1,9 +1,4 @@
-require_relative '../game'
-require_relative '../author'
-require_relative '../label'
-require_relative 'color'
-require 'time'
-require 'json'
+require_relative 'helper_module'
 
 # A module for handling game data
 class GameModule

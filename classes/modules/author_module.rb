@@ -21,4 +21,9 @@ class AuthorModule
       puts "#{blue((index + 1).to_s)}) Name: #{blue(author['first_name'])}, Surname: #{blue(author['last_name'])}"
     end
   end
+
+  def get_author_full_name(id)
+    selected_author  = @authors.find { |author| author['id'] == id }
+    selected_author['first_name'] + ' ' + selected_author['last_name']
+  end
 end

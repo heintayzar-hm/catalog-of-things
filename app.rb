@@ -4,7 +4,7 @@ class App
   def initialize
     @labels = LabelModule.new
     @authors = AuthorModule.new
-    @books = BookModule.new(@labels)
+    @books = BookModule.new(@labels, @authors)
     @games = GameModule.new(@labels, @authors)
   end
 

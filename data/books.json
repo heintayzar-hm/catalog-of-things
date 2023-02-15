@@ -1,44 +1,10 @@
 [
   {
-    "id": 544,
-    "publish_date": "Sat 10 Oct 2020",
+    "id": 130,
+    "publish_date": "Tue 10 Oct 2000",
     "publisher": "Hein",
     "cover_state": "covered",
-    "label_id": 3
-  },
-  {
-    "id": 256,
-    "publish_date": "Sun 01 Oct 2000",
-    "publisher": "jo",
-    "cover_state": "not covered",
-    "label_id": 1
-  },
-  {
-    "id": 529,
-    "publish_date": "Sat 10 Oct 2020",
-    "publisher": "Hein",
-    "cover_state": "covered",
-    "label_id": 1
-  },
-  {
-    "id": 818,
-    "publish_date": "Sat 10 Oct 2020",
-    "publisher": "Hein",
-    "cover_state": "bad",
-    "label_id": 1
-  },
-  {
-    "id": 2,
-    "publish_date": "Mon 02 Dec 2002",
-    "publisher": "user_one",
-    "cover_state": "bad",
-    "label_id": 3
-  },
-  {
-    "id": 469,
-    "publish_date": "Sat 10 Oct 2020",
-    "publisher": "name",
-    "cover_state": "covered",
-    "label_id": 2
+    "label_id": 1,
+    "author_id": 1
   }
 ]

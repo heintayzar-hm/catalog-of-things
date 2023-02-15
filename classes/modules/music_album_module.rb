@@ -10,9 +10,9 @@ class MusicAlbumModule
   end
 
   def load_music_albums
-    return [] if File.read(File.join('data', 'music_albums.json')).empty?
+    return [] if File.read(File.join('data', 'music_album.json')).empty?
 
-    JSON.parse(File.read(File.join('data', 'music_albums.json')))
+    JSON.parse(File.read(File.join('data', 'music_album.json')))
   end
 
   def list_all_music_albums
@@ -62,7 +62,7 @@ class MusicAlbumModule
     end
 
     def write_music_album_to_file
-      music_album_file_path = File.join('data', 'music_albums.json')
+      music_album_file_path = File.join('data', 'music_album.json')
       File.write(music_album_file_path, JSON.pretty_generate(@music_albums))
     end
   end

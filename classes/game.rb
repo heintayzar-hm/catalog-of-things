@@ -1,4 +1,3 @@
-require 'active_support/all'
 require_relative 'item'
 
 class Game < Item

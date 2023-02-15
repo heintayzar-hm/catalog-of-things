@@ -1,7 +1,7 @@
 [
     {
     "publish_date" : "2017-01-01",
-    "spotify" : false,
+    "spotify" : true,
     "genre" : "Gospel"
     },
     {

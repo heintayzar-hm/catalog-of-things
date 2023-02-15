@@ -143,6 +143,8 @@ Example command:
 👤 **Andrea Tamara Diegaardt**
 
 - GitHub: [@TechnoAndy](https://github.com/TechnoAndy)
+- Twitter: [ADiegaardt](https://twitter.com/ADiegaardt)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/andy-diegaardt/)
 
 👤 **Hein Tay Zar**
 

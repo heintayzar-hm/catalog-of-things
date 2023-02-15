@@ -2,7 +2,7 @@ require_relative 'helper_spec'
 
 describe MusicAlbum do
   before :each do
-    @music_album = MusicAlbum.new('2017-01-01', 'Gospel', true)
+    @music_album = MusicAlbum.new(true, '2017-01-01')
   end
   context 'Should have the properties for Music Album' do
     it 'on_spotify should be true' do

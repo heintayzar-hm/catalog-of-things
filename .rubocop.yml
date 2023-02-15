@@ -57,3 +57,9 @@ Layout/EndOfLine:
 
 Layout/EndOfLine:
   Enabled: false
+
+Lint/NestedMethodDefinition:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false

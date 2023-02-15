@@ -2,7 +2,7 @@ require_relative 'helper_spec'
 
 describe Label do
   before :each do
-    @label = Label.new('JK Rowling', 'red')
+    @label = Label.new('JK Rowling', 'red', 1)
   end
   context 'given two arguments' do
     it 'is an object of Label ' do

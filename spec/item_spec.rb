@@ -14,7 +14,7 @@ describe Item do
     end
 
     it 'can have one label' do
-      @item.label = Label.new('JK Rowling', 'red')
+      @item.label = Label.new('JK Rowling', 'red', 1)
       expect(@item.label).to be_an_instance_of(Label)
     end
 

@@ -6,8 +6,8 @@ class GameModule
 
   def initialize(label, author)
     @games = load_games
-    @label = label
-    @author = author
+    @labels = label
+    @authors = author
   end
 
   attr_accessor :games
@@ -28,7 +28,8 @@ class GameModule
       puts 'Games are: '
       @games.each do |game|
         puts "Multiplayer: #{blue(game['multiplayer'])}, Last played: #{blue(game['last_played'])} " \
-             "Publish date: #{blue(game['publish_date'])}"
+             "Publish date: #{blue(game['publish_date'])}, Label Title: #{blue(@labels.get_label(game['label_id']))}, " \
+             "Authour Full Name: #{blue(@authors.get_author_full_name(game['author_id']))}"
       end
     end
   end
@@ -67,11 +68,11 @@ class GameModule
 
   # Prompts the user to choose a game label from a list
   def get_user_label(msg)
-    @label.list_all_labels
+    @labels.list_all_labels
     print msg
     index = gets.chomp.to_i
     if index <= @label.labels.length && index.positive?
-      @label.labels[index - 1]
+      @labels.labels[index - 1]
     else
       puts red('Invalid index')
       get_user_label(msg)
@@ -80,11 +81,11 @@ class GameModule
 
   # Prompts the user to choose a game author from a list
   def get_user_author(msg)
-    @author.list_all_authors
+    @authors.list_all_authors
     print msg
     index = gets.chomp.to_i
-    if index <= @author.authors.length && index.positive?
-      @author.authors[index - 1]
+    if index <= @authors.authors.length && index.positive?
+      @authors.authors[index - 1]
     else
       puts red('Invalid index')
       get_user_author(msg)

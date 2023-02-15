@@ -24,5 +24,4 @@ class Game < Item
       'author_id' => @author.id
     }
   end
-
 end

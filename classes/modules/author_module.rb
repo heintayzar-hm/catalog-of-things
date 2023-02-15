@@ -23,7 +23,7 @@ class AuthorModule
   end
 
   def get_author_full_name(id)
-    selected_author  = @authors.find { |author| author['id'] == id }
-    selected_author['first_name'] + ' ' + selected_author['last_name']
+    selected_author = @authors.find { |author| author['id'] == id }
+    "#{selected_author['first_name']} #{selected_author['last_name']}"
   end
 end

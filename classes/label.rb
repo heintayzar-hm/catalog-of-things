@@ -7,6 +7,7 @@ class Label
   end
   attr_accessor :title, :color, :items
   attr_reader :id
+
   def add_item(item)
     return 'Item is already in the label' if item.label == self
     return 'Pleas use item Class' if item.class != Item

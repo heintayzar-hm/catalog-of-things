@@ -27,9 +27,10 @@ class GameModule
     else
       puts 'Games are: '
       @games.each do |game|
-        puts "Multiplayer: #{blue(game['multiplayer'])}, Last played: #{blue(game['last_played'])} " \
-             "Publish date: #{blue(game['publish_date'])}, Label Title: #{blue(@labels.get_label(game['label_id']))}, " \
-             "Authour Full Name: #{blue(@authors.get_author_full_name(game['author_id']))}"
+        puts "Multiplayer: #{blue(game['multiplayer'])}, Last played: #{blue(game['last_played'])}, " \
+             "Publish date: #{blue(game['publish_date'])}, " \
+             "Label Title: #{blue(@labels.get_label(game['label_id']))}, " \
+             "Authour Full Name: #{blue(@authors.get_author_full_name(game['author_id']))}."
       end
     end
   end

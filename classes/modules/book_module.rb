@@ -20,9 +20,9 @@ class BookModule
 
   def list_all_books
     return puts 'There are no books in the catalog' if @books.empty?
+
     puts 'Books are: '
     @books.each do |book|
-      
       puts "Publisher: #{blue(book['publisher'])}, Cover state: #{blue(book['cover_state'])}, " \
            "Publish date: #{blue(book['publish_date'])}, Label Title: #{blue(@labels.get_label(book['label_id']))}, " \
            "Authour Full Name: #{blue(@authors.get_author_full_name(book['author_id']))}"
@@ -93,7 +93,7 @@ class BookModule
 
     label = Label.new(label['title'], label['color'], label['id'])
     author = Author.new(author['first_name'], author['last_name'], author['id'])
-    
+
     book = Book.new(publisher, cover_state, publish_date)
     book.label = label
     book.author = author

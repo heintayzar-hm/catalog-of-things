@@ -105,9 +105,10 @@ class GameModule
     publish_date = get_user_date('Publish date (yyyy-mm-dd): ')
     label = get_user_label('Choose label: ')
     author = get_user_author('Choose author: ')
+    puts author
     game = Game.new(multiplayer, last_played, publish_date)
-    author = Author.new(author['first_name'], author['last_name'])
-    label = Label.new(label['title'], label['color'])
+    author = Author.new(author['first_name'], author['last_name'], author['id'])
+    label = Label.new(label['title'], label['color'], label['id'])
     game.label = label
     game.author = author
     @games << game.to_hash

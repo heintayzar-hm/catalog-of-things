@@ -72,7 +72,7 @@ class GameModule
     @labels.list_all_labels
     print msg
     index = gets.chomp.to_i
-    if index <= @label.labels.length && index.positive?
+    if index <= @labels.labels.length && index.positive?
       @labels.labels[index - 1]
     else
       puts red('Invalid index')
@@ -102,7 +102,6 @@ class GameModule
     publish_date = get_user_date('Publish date (yyyy-mm-dd): ')
     label = get_user_label('Choose label: ')
     author = get_user_author('Choose author: ')
-    puts author
     game = Game.new(multiplayer, last_played, publish_date)
     author = Author.new(author['first_name'], author['last_name'], author['id'])
     label = Label.new(label['title'], label['color'], label['id'])

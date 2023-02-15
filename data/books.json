@@ -6,5 +6,13 @@
     "cover_state": "covered",
     "label_id": 1,
     "author_id": 1
+  },
+  {
+    "id": 218,
+    "publish_date": "Sat 10 Oct 2020",
+    "publisher": "Hein",
+    "cover_state": "covered",
+    "label_id": 1,
+    "author_id": 2
   }
 ]

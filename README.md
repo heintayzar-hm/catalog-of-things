@@ -40,7 +40,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [catalog of my things] <a name="about-project"></a>
 
-**[The catalog of my things]** is a console application with various options to manipulate and query a catalog of items, including the ability to list, add, and query items, and saving the data using JSON files.
+**[Catalog of My Things]** is a console app that allows users to keep a record of different types of things they own, such as books, music albums, movies, and games. It is based on a UML class diagram and stores data in JSON files and a database with tables structure analogical to your program's class structure.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -105,13 +105,11 @@ Install this project with:
 
 To run the project, execute the following command:
 
-<!--
-Example command:
 
 ```sh
-  rails server
+ ruby main.rb
 ```
---->
+
 
 ### Run tests
 

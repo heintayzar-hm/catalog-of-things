@@ -34,3 +34,19 @@ CREATE TABLE game (
   label_id INTEGER REFERENCES label(id),
   author INTEGER REFERENCES author(id)
 );
+
+CREATE TABLE music_album (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    archive BOOLEAN,
+    on_spotify BOOLEAN,
+    publish_date DATE,
+    genre VARCHAR(100),
+    PRIMARY KEY (id),
+    FOREIGN KEY (genre) REFERENCES genre (name)
+)
+
+CREATE TABLE genre (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(100),
+    PRIMARY KEY (id)
+)

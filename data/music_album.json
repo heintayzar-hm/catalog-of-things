@@ -1,17 +1,22 @@
 [
-    {
-    "publish_date" : "2017-01-01",
-    "spotify" : true,
-    "genre" : "Gospel"
-    },
-    {
-    "publish_date" : "2019-05-07",
-    "spotify" : true,
-    "genre" : "Gospel"
-    },
-    {
-    "publish_date" : "2021-06-02",
-    "spotify" : true,
-    "genre" : "Gospel"
-    }
+  {
+    "id": 269,
+    "on_spotify": true,
+    "publish_date": "2020-10-10",
+    "genre_id": 1
+  },
+  {
+    "id": 502,
+    "on_spotify": true,
+    "publish_date": "2020-10-10",
+    "genre_id": 1
+  },
+  {
+    "id": 461,
+    "on_spotify": true,
+    "publish_date": "2020-10-10",
+    "genre_id": 1,
+    "label_id": 1,
+    "author_id": 1
+  }
 ]

@@ -5,7 +5,7 @@ class GenreModule
   def initialize
     @genres = load_genre
   end
-  attr_accessor :genre
+  attr_accessor :genres
 
   def load_genre
     return [] if File.read(File.join('data', 'genres.json')).empty?

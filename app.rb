@@ -7,7 +7,7 @@ class App
     @genres = GenreModule.new
     @books = BookModule.new(@labels, @authors)
     @games = GameModule.new(@labels, @authors)
-    @music_albums = MusicAlbumModule.new(@genres)
+    @music_albums = MusicAlbumModule.new(@labels, @authors, @genres)
   end
 
   attr_accessor :books

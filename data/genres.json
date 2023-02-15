@@ -1,15 +1,15 @@
 [
     {
         "id": 1,
-        "name": "Comedy"
+        "name": "Gospel"
 
     },
     {
         "id": 2,
-        "name": "Thriller"
+        "name": "Classical"
     },
     {
         "id": 3,
-        "name": "Family"
+        "name": "Dance"
     }
 ]

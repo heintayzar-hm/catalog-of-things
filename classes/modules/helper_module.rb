@@ -6,6 +6,3 @@ require_relative '../genre'
 require_relative 'color'
 require 'time'
 require 'json'
-
-
-

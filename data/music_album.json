@@ -18,5 +18,21 @@
     "genre_id": 1,
     "label_id": 1,
     "author_id": 1
+  },
+  {
+    "id": 858,
+    "on_spotify": true,
+    "publish_date": "2021-10-10",
+    "genre_id": 1,
+    "label_id": 2,
+    "author_id": 3
+  },
+  {
+    "id": 895,
+    "on_spotify": true,
+    "publish_date": "2020-05-05",
+    "genre_id": 1,
+    "label_id": 1,
+    "author_id": 2
   }
 ]

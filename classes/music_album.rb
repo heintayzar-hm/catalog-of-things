@@ -9,7 +9,6 @@ class MusicAlbum < Item
     @items = []
   end
 
-
   def to_hash(*_args)
     {
       'id' => @id,

@@ -14,20 +14,14 @@ class Game < Item
     @last_played < 2.years.ago && super
   end
 
-  def to_json(*_args)
-    {
-      'multiplayer' => @multiplayer,
-      'last_played' => @last_played,
-      'publish_date' => @publish_date
-    }.to_json
-  end
-
   def to_hash(*_args)
     {
       'id' => @id,
       'publish_date' => @publish_date.strftime('%a %d %b %Y'),
       'multiplayer' => @multiplayer,
-      'last_played' => @last_played.strftime('%a %d %b %Y')
+      'last_played' => @last_played.strftime('%a %d %b %Y'),
+      'author' => @author,
+      'label' => @label
     }
   end
 

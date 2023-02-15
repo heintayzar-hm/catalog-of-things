@@ -33,5 +33,12 @@
     "publisher": "user_one",
     "cover_state": "bad",
     "label_id": 3
+  },
+  {
+    "id": 469,
+    "publish_date": "Sat 10 Oct 2020",
+    "publisher": "name",
+    "cover_state": "covered",
+    "label_id": 2
   }
 ]

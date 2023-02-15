@@ -25,16 +25,18 @@ OPTIONAL SECTIONS:
 After you're finished please remove all the comments and instructions!
 -->
 
-<div align="center"><h3>
-
-<b>Microverse README Template</b></h3>
+<div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <h3><b>Microverse README Template</b></h3>
+
+
   <img src="catalog_of_my_things.png" alt="logo" width="700"  height="auto" />
   <br/>
 
   
 
-<!-- PROJECT DESCRIPTION -->
+</div>
+
 
 # 📖 [catalog of my things] <a name="about-project"></a>
 
@@ -44,25 +46,29 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
+
 <details>
 <summary>Database</summary>
   <ul>
     <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
-  <details>
+</details>
+
+<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Stores data in json file**
-- **Add several types of items**
-- **show the list of items stored in it**
+
+- **[Stores data in json file]**
+- **[Add several types of items]**
+- **[show the list of items stored in it]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
+
 
 To get a local copy up and running, follow these steps.
 
@@ -70,7 +76,9 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
+```sh
 Ruby installed on your machine
+```
 
 ### Setup
 
@@ -78,21 +86,52 @@ Clone this repository to your desired folder:
 
 **clone repo to your desired folder:**
 
-```
+```sh
 git clone git@github.com:heintayzar-hm/catalog-of-things.git
 ```
 
-**Then**
+### Install
 
-```
-cd catalog-of-things
+Install this project with:
 
-and run `ruby main.rb`
+```sh
+  cd catalog-of-things
+
+  bundle install
 ```
+
+
+### Usage
+
+To run the project, execute the following command:
+
+<!--
+Example command:
+
+```sh
+  rails server
+```
+--->
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  rspec
+```
+
+<!--
+Example command:
+
+
+--->
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
+
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -112,14 +151,14 @@ and run `ruby main.rb`
 - GitHub: [@heintayzar-hm](https://github.com/heintayzar-hm)
 
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Delete items**
+
+- [ ] **[Delete items]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,6 +176,7 @@ Feel free to check the [issues page](https://github.com/heintayzar-hm/catalog-of
 
 ## ⭐️ Show your support <a name="support"></a>
 
+
 If you like this project give it a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -145,7 +185,22 @@ If you like this project give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the idea of this project.
+
+I would like to thank Microverse and my teammates for the idea of this project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+- **What type of Structured Query Language did we use for the schema**
+
+  - PostgreSQL
+
+- **Where did we link all the application features for displaying on the UI**
+
+  - app.rb file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,5 +209,6 @@ I would like to thank Microverse for the idea of this project.
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./License) licensed.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

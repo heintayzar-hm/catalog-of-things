@@ -16,14 +16,12 @@ class MusicAlbumModule
   end
 
   def list_all_music_albums
-    if @music_albums.empty?
-      puts 'There are no music albums in the catalog'
-    else
+    return puts red('There are no music albums in the catalog') if @music_albums.empty?
       puts 'Music albums are: '
       @music_albums.each do |music_album|
         puts "Title: #{blue(music_album['title'])}, Artist: #{blue(music_album['artist'])}, " \
              "Genre: #{blue(@genres.get_genre(music_album['genre_id']))}"
-      end
+
   end
 
   def get_user_string(msg)

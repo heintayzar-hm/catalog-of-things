@@ -1,5 +1,17 @@
-[{
+[
+    {
     "publish_date" : "2017-01-01",
     "spotify" : false,
     "genre" : "Gospel"
-}]
+    },
+    {
+    "publish_date" : "2019-05-07",
+    "spotify" : true,
+    "genre" : "Gospel"
+    },
+    {
+    "publish_date" : "2021-06-02",
+    "spotify" : true,
+    "genre" : "Gospel"
+    }
+]

@@ -40,7 +40,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [catalog of my things] <a name="about-project"></a>
 
-**[Catalog of My Things]** is a console app that allows users to keep a record of different types of things they own, such as books, music albums, movies, and games. It is based on a UML class diagram and stores data in JSON files and a database with tables structure analogical to your program's class structure.
+**[Catalog of My Things]** is a console app that allows users to keep a record of different types of things they own, such as books, music albums, movies, and games. It is based on a UML class diagram and stores data in JSON files and a database with tables structure analogical to the program class structure.
 
 ## 🛠 Built With <a name="built-with"></a>
 

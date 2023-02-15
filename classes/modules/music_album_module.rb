@@ -1,5 +1,4 @@
 require_relative '../music_album'
-require_relative 'genre'
 require_relative 'color'
 require 'json'
 class MusicAlbumModule
@@ -25,14 +24,14 @@ class MusicAlbumModule
         puts "Title: #{blue(music_album['title'])}, Artist: #{blue(music_album['artist'])}, " \
              "Genre: #{blue(@genres.get_genre(music_album['genre_id']))}"
       end
-    end
+  end
 
-    def get_user_string(msg)
+  def get_user_string(msg)
       print cyan(msg)
       gets.chomp
-    end
+  end
 
-    def get_user_genre(msg)
+  def get_user_genre(msg)
       genre = get_user_string(msg)
       if @genres.genre_exists?(genre)
         genre
@@ -40,7 +39,7 @@ class MusicAlbumModule
         puts red('Invalid genre')
         get_user_genre(msg)
       end
-    end
+  end
 
     def get_user_music_album(msg)
       music_album = get_user_string(msg)

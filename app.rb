@@ -4,8 +4,10 @@ class App
   def initialize
     @labels = LabelModule.new
     @authors = AuthorModule.new
+    @genres = GenreModule.new
     @books = BookModule.new(@labels, @authors)
     @games = GameModule.new(@labels, @authors)
+    @music_albums = MusicAlbumModule.new(@genres)
   end
 
   attr_accessor :books
@@ -82,5 +84,9 @@ class App
 
   def list_all_labels
     @labels.send(:list_all_labels)
+  end
+
+  def add_a_music_album
+    @music_albums.send(:add_music_album)
   end
 end

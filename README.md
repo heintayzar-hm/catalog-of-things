@@ -151,7 +151,9 @@ Example command:
 
 👤 **Hein Tay Zar**
 
-- GitHub: [@heintayzar-hm](https://github.com/heintayzar-hm)
+- GitHub: [@Hein Tay](https://github.com/heintayzar-hm)
+- Twitter: [@Hein Tay](https://twitter.com/heintayzarhm)
+- LinkedIn: [Hein Tay](https://www.linkedin.com/in/hein-tay-zar)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

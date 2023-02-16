@@ -27,68 +27,30 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <h3><b>Microverse README Template</b></h3>
+
+
+  <img src="catalog_of_my_things.png" alt="logo" width="700"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  
 
 </div>
 
-<!-- TABLE OF CONTENTS -->
 
-# 📗 Table of Contents
+# 📖 [catalog of my things] <a name="about-project"></a>
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
-
-<!-- PROJECT DESCRIPTION -->
-
-# 📖 [your_project_name] <a name="about-project"></a>
-
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+**[The catalog of my things]** is a console application with various options to manipulate and query a catalog of items, including the ability to list, add, and query items, and saving the data using JSON files.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
 
 <details>
 <summary>Database</summary>
   <ul>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
@@ -97,29 +59,16 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- **[Stores data in json file]**
+- **[Add several types of items]**
+- **[show the list of items stored in it]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -127,39 +76,30 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
 ```sh
- gem install rails
+Ruby installed on your machine
 ```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
+**clone repo to your desired folder:**
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+git clone git@github.com:heintayzar-hm/catalog-of-things.git
 ```
---->
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
-  cd my-project
-  gem install
+  cd catalog-of-things
+
+  bundle install
 ```
---->
+
 
 ### Usage
 
@@ -177,45 +117,39 @@ Example command:
 
 To run tests, run the following command:
 
+```sh
+  rspec
+```
+
 <!--
 Example command:
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
+
 --->
 
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
+
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Ibrahim Suhail Al-Yousefi**
 
-👤 **Author1**
+- GitHub: [@cluab](https://github.com/Cluab)
+- Twitter: [@cluab122](https://twitter.com/cluab122)
+- LinkedIn: [Ebrahim Al-Yousefi](https://www.linkedin.com/in/ebrahim-alyousefi/)
+- Instagram: [@27.i.b](https://www.instagram.com/27.i.b/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Andrea Tamara Diegaardt**
 
-👤 **Author2**
+- GitHub: [@TechnoAndy](https://github.com/TechnoAndy)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Hein Tay Zar**
+
+- GitHub: [@heintayzar-hm](https://github.com/heintayzar-hm)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,11 +157,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Delete items]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -237,7 +168,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/heintayzar-hm/catalog-of-things/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,9 +176,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project give it a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,9 +185,8 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank Microverse and my teammates for the idea of this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -265,15 +194,13 @@ I would like to thank...
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **What type of Structured Query Language did we use for the schema**
 
-- **[Question_1]**
+  - PostgreSQL
 
-  - [Answer_1]
+- **Where did we link all the application features for displaying on the UI**
 
-- **[Question_2]**
-
-  - [Answer_2]
+  - app.rb file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -281,8 +208,7 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./License) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

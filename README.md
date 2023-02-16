@@ -40,7 +40,9 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [catalog of my things] <a name="about-project"></a>
 
-**[The catalog of my things]** is a console application with various options to manipulate and query a catalog of items, including the ability to list, add, and query items, and saving the data using JSON files.
+
+**[Catalog of My Things]** is a console app that allows users to keep a record of different types of things they own, such as books, music albums, movies, and games. It is based on a UML class diagram and stores data in JSON files and a database with tables structure analogical to the program class structure.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -105,13 +107,11 @@ Install this project with:
 
 To run the project, execute the following command:
 
-<!--
-Example command:
 
 ```sh
-  rails server
+ ruby main.rb
 ```
---->
+
 
 ### Run tests
 
@@ -145,6 +145,9 @@ Example command:
 👤 **Andrea Tamara Diegaardt**
 
 - GitHub: [@TechnoAndy](https://github.com/TechnoAndy)
+- Twitter: [ADiegaardt](https://twitter.com/ADiegaardt)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/andy-diegaardt/)
+
 
 👤 **Hein Tay Zar**
 
@@ -194,13 +197,14 @@ I would like to thank Microverse and my teammates for the idea of this project.
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **What type of Structured Query Language did we use for the schema**
+- **What type of Structured Query Language did we use for the database schema?**
 
-  - PostgreSQL
+  - We used PostgreSQL for the database schema. The schema is defined in the schema.sql file.
 
-- **Where did we link all the application features for displaying on the UI**
+- **Where are the application features linked for display on the user interface?**
 
-  - app.rb file
+  - The application features are linked and implemented in the main.rb file. The main.rb file serves as the entry point for the console application and allows users to manage collections of the things they own. The console app presents a list of options to perform, allows users to choose an option, and prompts them for any necessary parameters. The user interface also makes use of the data stored in the database and JSON files to display information about the user's collections.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

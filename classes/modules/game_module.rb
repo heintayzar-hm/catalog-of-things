@@ -69,7 +69,7 @@ class GameModule
       get_user_date(msg)
     end
   end
-
+  
   # Adds a new game to the catalog
   def add_game
     puts 'Please enter the following information'

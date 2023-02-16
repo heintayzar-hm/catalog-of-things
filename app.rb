@@ -86,6 +86,10 @@ class App
     @labels.send(:list_all_labels)
   end
 
+  def list_all_music_albums
+    @music_albums.send(:list_all_music_albums)
+  end
+
   def add_a_music_album
     @music_albums.send(:add_music_album)
   end

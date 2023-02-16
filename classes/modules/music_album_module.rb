@@ -20,8 +20,10 @@ class MusicAlbumModule
 
     puts 'Music albums are: '
     @music_albums.each do |music_album|
-      puts "Title: #{blue(music_album['title'])}, Artist: #{blue(music_album['artist'])}, " \
-           "Genre: #{blue(@genres.get_genre(music_album['genre_id']))}"
+      puts "On Spotify: #{blue(music_album['on_spotify'])}, Publish Date: #{blue(music_album['publish_date'])}, " \
+           "Author: #{blue(@authors.get_author_full_name(music_album['author_id']))}, " \
+           "Genre: #{blue(@genres.get_genre(music_album['genre_id']))}, " \
+           "Label: #{blue(@labels.get_label(music_album['label_id']))}."
     end
   end
 

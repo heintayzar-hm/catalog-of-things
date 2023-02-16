@@ -18,6 +18,7 @@ class Book < Item
       'publish_date' => @publish_date.strftime('%a %d %b %Y'),
       'publisher' => @publisher,
       'cover_state' => @cover_state,
+      'genre_id' => @genre.id,
       'label_id' => @label.id,
       'author_id' => @author.id
     }

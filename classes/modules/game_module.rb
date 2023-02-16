@@ -2,12 +2,14 @@ require_relative 'helper_module'
 
 # A module for handling game data
 class GameModule
+  include Selection
   include ColorTerminal
 
-  def initialize(label, author)
+  def initialize(label, author, genre)
     @games = load_games
     @labels = label
     @authors = author
+    @genres = genre
   end
 
   attr_accessor :games
@@ -29,16 +31,11 @@ class GameModule
       @games.each do |game|
         puts "Multiplayer: #{blue(game['multiplayer'])}, Last played: #{blue(game['last_played'])}, " \
              "Publish date: #{blue(game['publish_date'])}, " \
-             "Label Title: #{blue(@labels.get_label(game['label_id']))}, " \
-             "Authour Full Name: #{blue(@authors.get_author_full_name(game['author_id']))}."
+             "Author: #{blue(@authors.get_author_full_name(game['author_id']))}, " \
+             "Genre: #{blue(@genres.get_genre(game['genre_id']))}, " \
+             "Label: #{blue(@labels.get_label(game['label_id']))}."
       end
     end
-  end
-
-  # Prompts the user for a string input
-  def get_user_string(msg)
-    print cyan(msg)
-    gets.chomp
   end
 
   # Handles user input for multiplayer status
@@ -48,51 +45,6 @@ class GameModule
     'no'
   end
 
-  # Checks if a given string is a valid date
-  def valid_time?(date_string)
-    Time.parse(date_string)
-    true
-  rescue ArgumentError
-    false
-  end
-
-  # Prompts the user for a valid date
-  def get_user_date(msg)
-    time = get_user_string(msg)
-    if valid_time?(time)
-      time
-    else
-      puts red('Invalid date')
-      get_user_date(msg)
-    end
-  end
-
-  # Prompts the user to choose a game label from a list
-  def get_user_label(msg)
-    @labels.list_all_labels
-    print msg
-    index = gets.chomp.to_i
-    if index <= @labels.labels.length && index.positive?
-      @labels.labels[index - 1]
-    else
-      puts red('Invalid index')
-      get_user_label(msg)
-    end
-  end
-
-  # Prompts the user to choose a game author from a list
-  def get_user_author(msg)
-    @authors.list_all_authors
-    print msg
-    index = gets.chomp.to_i
-    if index <= @authors.authors.length && index.positive?
-      @authors.authors[index - 1]
-    else
-      puts red('Invalid index')
-      get_user_author(msg)
-    end
-  end
-
   # Adds a new game to the catalog
   def add_game
     puts 'Please enter the following information'
@@ -100,13 +52,16 @@ class GameModule
     multiplayer = multiplayer_handler(get_user_string('Multiplayer (y/n): '))
     last_played = get_user_date('Last played (yyyy-mm-dd): ')
     publish_date = get_user_date('Publish date (yyyy-mm-dd): ')
-    label = get_user_label('Choose label: ')
-    author = get_user_author('Choose author: ')
+    label = get_user_label('Choose label: ', @labels)
+    author = get_user_author('Choose author: ', @authors)
+    genre = get_user_genre('Choose genre: ', @genres)
     game = Game.new(multiplayer, last_played, publish_date)
     author = Author.new(author['first_name'], author['last_name'], author['id'])
     label = Label.new(label['title'], label['color'], label['id'])
+    genre = Genre.new(genre['name'], genre['id'])
     game.label = label
     game.author = author
+    game.genre = genre
     @games << game.to_hash
     write_games_to_file
     puts green('Game added successfully')

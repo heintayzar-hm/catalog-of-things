@@ -40,7 +40,9 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [catalog of my things] <a name="about-project"></a>
 
+
 **[Catalog of My Things]** is a console app that allows users to keep a record of different types of things they own, such as books, music albums, movies, and games. It is based on a UML class diagram and stores data in JSON files and a database with tables structure analogical to the program class structure.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -146,6 +148,7 @@ Example command:
 - Twitter: [ADiegaardt](https://twitter.com/ADiegaardt)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/andy-diegaardt/)
 
+
 👤 **Hein Tay Zar**
 
 - GitHub: [@heintayzar-hm](https://github.com/heintayzar-hm)
@@ -201,6 +204,7 @@ I would like to thank Microverse and my teammates for the idea of this project.
 - **Where are the application features linked for display on the user interface?**
 
   - The application features are linked and implemented in the main.rb file. The main.rb file serves as the entry point for the console application and allows users to manage collections of the things they own. The console app presents a list of options to perform, allows users to choose an option, and prompts them for any necessary parameters. The user interface also makes use of the data stored in the database and JSON files to display information about the user's collections.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

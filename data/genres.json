@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "name": "Gospel"
+
+    },
+    {
+        "id": 2,
+        "name": "Classical"
+    },
+    {
+        "id": 3,
+        "name": "Dance"
+    }
+]

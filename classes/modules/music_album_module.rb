@@ -1,6 +1,7 @@
 require_relative 'helper_module'
 class MusicAlbumModule
-  include ColorTerminal , Selection
+  include Selection
+  include ColorTerminal
 
   def initialize(labels, authors, genres)
     @music_albums = load_music_albums
@@ -31,7 +32,6 @@ class MusicAlbumModule
     print cyan(msg)
     gets.chomp
   end
-
 
   def music_album_exists?(_music_album)
     @music_albums.any? { |music_album| music_album['title'] == music_album }

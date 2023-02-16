@@ -39,7 +39,7 @@ class MusicAlbumModule
 
   def add_music_album
     on_spotify = get_user_string('Is music album avaliable on spotify(y/n): ')
-    on_spotify = true if on_spotify.downcase == 'y'
+    on_spotify = on_spotify.downcase == 'y'
     publish_date = get_user_string('Enter published date(yyyy-mm-dd): ')
     genre = get_user_genre('Enter music album genre: ', @genres)
     label = get_user_label('Choose Label: ', @labels)

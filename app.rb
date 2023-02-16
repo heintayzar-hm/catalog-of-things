@@ -93,4 +93,8 @@ class App
   def add_a_music_album
     @music_albums.send(:add_music_album)
   end
+
+  def list_all_genres
+    @genres.send(:list_all_genres)
+  end
 end

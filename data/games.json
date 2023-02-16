@@ -7,5 +7,14 @@
     "genre_id": 1,
     "label_id": 3,
     "author_id": 2
+  },
+  {
+    "id": 885,
+    "publish_date": "Tue 10 Oct 2000",
+    "multiplayer": "yes",
+    "last_played": "Tue 10 Oct 2000",
+    "genre_id": 3,
+    "label_id": 1,
+    "author_id": 2
   }
 ]

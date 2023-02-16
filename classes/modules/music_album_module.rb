@@ -28,11 +28,6 @@ class MusicAlbumModule
     end
   end
 
-  def get_user_string(msg)
-    print cyan(msg)
-    gets.chomp
-  end
-
   def music_album_exists?(_music_album)
     @music_albums.any? { |music_album| music_album['title'] == music_album }
   end
@@ -40,7 +35,7 @@ class MusicAlbumModule
   def add_music_album
     on_spotify = get_user_string('Is music album avaliable on spotify(y/n): ')
     on_spotify = on_spotify.downcase == 'y'
-    publish_date = get_user_string('Enter published date(yyyy-mm-dd): ')
+    publish_date = get_user_date('Enter published date(yyyy-mm-dd): ')
     genre = get_user_genre('Enter music album genre: ', @genres)
     label = get_user_label('Choose Label: ', @labels)
     author = get_user_author('Choose author: ', @authors)
@@ -53,6 +48,7 @@ class MusicAlbumModule
     music_album.author = author
     @music_albums << music_album.to_hash
     write_music_album_to_file
+    puts green('Music Album added successfully')
   end
 
   def write_music_album_to_file

@@ -19,6 +19,7 @@ class Game < Item
       'publish_date' => @publish_date.strftime('%a %d %b %Y'),
       'multiplayer' => @multiplayer,
       'last_played' => @last_played.strftime('%a %d %b %Y'),
+      'genre_id' => @genre.id,
       'label_id' => @label.id,
       'author_id' => @author.id
     }

@@ -1,7 +1,7 @@
 class Genre
   attr_accessor :id, :name, :items
 
-  def initialize(id, name)
+  def initialize(name, id)
     @id = id
     @name = name
     @items = []

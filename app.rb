@@ -5,8 +5,8 @@ class App
     @labels = LabelModule.new
     @authors = AuthorModule.new
     @genres = GenreModule.new
-    @books = BookModule.new(@labels, @authors)
-    @games = GameModule.new(@labels, @authors)
+    @books = BookModule.new(@labels, @authors, @genres)
+    @games = GameModule.new(@labels, @authors, @genres)
     @music_albums = MusicAlbumModule.new(@labels, @authors, @genres)
   end
 

@@ -1,13 +1,13 @@
-require_relative '../book'
-require_relative 'color'
-require 'json'
+require_relative 'helper_module'
 class BookModule
+  include Selection
   include ColorTerminal
 
-  def initialize(labels, authors)
+  def initialize(labels, authors, genres)
     @books = load_books
     @labels = labels
     @authors = authors
+    @genres = genres
   end
 
   attr_accessor :books
@@ -24,8 +24,10 @@ class BookModule
     puts 'Books are: '
     @books.each do |book|
       puts "Publisher: #{blue(book['publisher'])}, Cover state: #{blue(book['cover_state'])}, " \
-           "Publish date: #{blue(book['publish_date'])}, Label Title: #{blue(@labels.get_label(book['label_id']))}, " \
-           "Authour Full Name: #{blue(@authors.get_author_full_name(book['author_id']))}"
+           "Publish date: #{blue(book['publish_date'])}," \
+           "Author: #{blue(@authors.get_author_full_name(book['author_id']))}, " \
+           "Genre: #{blue(@genres.get_genre(book['genre_id']))}, " \
+           "Label: #{blue(@labels.get_label(book['label_id']))}."
     end
   end
 
@@ -57,46 +59,22 @@ class BookModule
     end
   end
 
-  def get_user_label(msg)
-    @labels.list_all_labels
-    print msg
-    index = gets.chomp.to_i
-    if index <= @labels.labels.length && index.positive?
-      @labels.labels[index - 1]
-    else
-      puts red('Invalid index')
-      get_user_label(msg)
-    end
-  end
-
-  # Prompts the user to choose a game author from a list
-  def get_user_author(msg)
-    @authors.list_all_authors
-    print msg
-    index = gets.chomp.to_i
-    if index <= @authors.authors.length && index.positive?
-      @authors.authors[index - 1]
-    else
-      puts red('Invalid index')
-      get_user_author(msg)
-    end
-  end
-
   def add_book
     puts 'Please enter the following information'
     publisher = get_user_string('Publisher: ')
     cover_state = get_user_string('Cover state(y/n): ')
     cover_state = cover_state_handler(cover_state)
     publish_date = get_user_date('Publish date(yyyy-mm-dd): ')
-    label = get_user_label('Choose Label: ')
-    author = get_user_author('Choose author: ')
-
+    label = get_user_label('Choose Label: ', @labels)
+    author = get_user_author('Choose author: ', @authors)
+    genre = get_user_genre('Choose genre: ', @genres)
     label = Label.new(label['title'], label['color'], label['id'])
     author = Author.new(author['first_name'], author['last_name'], author['id'])
-
+    genre = Genre.new(genre['name'], genre['id'])
     book = Book.new(publisher, cover_state, publish_date)
     book.label = label
     book.author = author
+    book.genre = genre
     @books << book.to_hash
     write_books_to_file
   end

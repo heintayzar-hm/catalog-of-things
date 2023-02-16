@@ -38,5 +38,21 @@
     "genre_id": 1,
     "label_id": 1,
     "author_id": 2
+  },
+  {
+    "id": 879,
+    "on_spotify": true,
+    "publish_date": "2010-03-03",
+    "genre_id": 1,
+    "label_id": 1,
+    "author_id": 3
+  },
+  {
+    "id": 792,
+    "on_spotify": false,
+    "publish_date": "2010-03-03",
+    "genre_id": 1,
+    "label_id": 2,
+    "author_id": 3
   }
 ]

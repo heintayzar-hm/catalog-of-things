@@ -77,6 +77,7 @@ class BookModule
     book.genre = genre
     @books << book.to_hash
     write_books_to_file
+    puts green('Game added successfully')
   end
 
   def write_books_to_file

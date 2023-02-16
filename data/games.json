@@ -16,5 +16,14 @@
     "genre_id": 3,
     "label_id": 1,
     "author_id": 2
+  },
+  {
+    "id": 578,
+    "publish_date": "Tue 02 Feb 2010",
+    "multiplayer": "no",
+    "last_played": "Tue 02 Feb 2010",
+    "genre_id": 3,
+    "label_id": 1,
+    "author_id": 2
   }
 ]

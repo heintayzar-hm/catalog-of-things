@@ -25,5 +25,23 @@
     "genre_id": 3,
     "label_id": 2,
     "author_id": 2
+  },
+  {
+    "id": 489,
+    "publish_date": "Sun 10 Oct 2010",
+    "publisher": "Hein",
+    "cover_state": "covered",
+    "genre_id": 2,
+    "label_id": 1,
+    "author_id": 2
+  },
+  {
+    "id": 59,
+    "publish_date": "Tue 02 Feb 2010",
+    "publisher": "Hein",
+    "cover_state": "covered",
+    "genre_id": 3,
+    "label_id": 1,
+    "author_id": 2
   }
 ]

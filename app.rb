@@ -57,7 +57,7 @@ class App
     user_menu
     print('Please enter a number:')
     user_input = gets.chomp.to_i
-    return puts 'leave the catalog' if user_input >= 13
+    return puts('Thank you for using this catalog') if user_input >= 13
 
     user_choice(user_input)
   end

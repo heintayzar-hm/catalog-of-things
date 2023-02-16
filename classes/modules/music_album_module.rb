@@ -53,6 +53,7 @@ class MusicAlbumModule
     music_album.author = author
     @music_albums << music_album.to_hash
     write_music_album_to_file
+    puts green('Music Album added successfully')
   end
 
   def write_music_album_to_file

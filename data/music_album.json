@@ -40,6 +40,7 @@
     "author_id": 2
   },
   {
+<<<<<<< HEAD
     "id": 879,
     "on_spotify": true,
     "publish_date": "2010-03-03",
@@ -54,5 +55,37 @@
     "genre_id": 1,
     "label_id": 2,
     "author_id": 3
+=======
+    "id": 962,
+    "on_spotify": true,
+    "publish_date": "2000-10-10",
+    "genre_id": 2,
+    "label_id": 3,
+    "author_id": 2
+  },
+  {
+    "id": 162,
+    "on_spotify": false,
+    "publish_date": "2000-10-10",
+    "genre_id": 1,
+    "label_id": 2,
+    "author_id": 3
+  },
+  {
+    "id": 261,
+    "on_spotify": true,
+    "publish_date": "2000-10-10",
+    "genre_id": 2,
+    "label_id": 3,
+    "author_id": 1
+  },
+  {
+    "id": 754,
+    "on_spotify": true,
+    "publish_date": "2000-10-10",
+    "genre_id": 1,
+    "label_id": 3,
+    "author_id": 2
+>>>>>>> c74663d5a1ed564854a771baf0cac63a23a90952
   }
 ]

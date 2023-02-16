@@ -31,32 +31,10 @@ class BookModule
     end
   end
 
-  def get_user_string(msg)
-    print cyan(msg)
-    gets.chomp
-  end
-
   def cover_state_handler(cover_state)
     return 'covered' if cover_state.downcase == 'y'
 
     'bad'
-  end
-
-  def valid_date?(date_string)
-    Date.parse(date_string)
-    true
-  rescue ArgumentError
-    false
-  end
-
-  def get_user_date(msg)
-    date = get_user_string(msg)
-    if valid_date?(date)
-      date
-    else
-      puts red('Invalid date')
-      get_user_date(msg)
-    end
   end
 
   def add_book
@@ -77,7 +55,11 @@ class BookModule
     book.genre = genre
     @books << book.to_hash
     write_books_to_file
+<<<<<<< HEAD
     puts green('Game added successfully')
+=======
+    puts green('Book added successfully')
+>>>>>>> c74663d5a1ed564854a771baf0cac63a23a90952
   end
 
   def write_books_to_file

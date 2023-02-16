@@ -7,7 +7,7 @@ module Selection
       genres.genres[index - 1]
     else
       puts red('Invalid index')
-      get_user_genre(msg)
+      get_user_genre(msg, genres)
     end
   end
 
@@ -19,7 +19,7 @@ module Selection
       authors.authors[index - 1]
     else
       puts red('Invalid index')
-      get_user_author(msg)
+      get_user_author(msg, authors)
     end
   end
 
@@ -31,7 +31,29 @@ module Selection
       labels.labels[index - 1]
     else
       puts red('Invalid index')
-      get_user_label(msg)
+      get_user_label(msg, labels)
     end
+  end
+
+  def valid_date?(date_string)
+    Date.parse(date_string)
+    true
+  rescue ArgumentError
+    false
+  end
+
+  def get_user_date(msg)
+    date = get_user_string(msg)
+    if valid_date?(date)
+      date
+    else
+      puts red('Invalid date')
+      get_user_date(msg)
+    end
+  end
+
+  def get_user_string(msg)
+    print cyan(msg)
+    gets.chomp
   end
 end

@@ -38,36 +38,11 @@ class GameModule
     end
   end
 
-  # Prompts the user for a string input
-  def get_user_string(msg)
-    print cyan(msg)
-    gets.chomp
-  end
-
   # Handles user input for multiplayer status
   def multiplayer_handler(cover_state)
     return 'yes' if cover_state.downcase == 'y'
 
     'no'
-  end
-
-  # Checks if a given string is a valid date
-  def valid_time?(date_string)
-    Time.parse(date_string)
-    true
-  rescue ArgumentError
-    false
-  end
-
-  # Prompts the user for a valid date
-  def get_user_date(msg)
-    time = get_user_string(msg)
-    if valid_time?(time)
-      time
-    else
-      puts red('Invalid date')
-      get_user_date(msg)
-    end
   end
 
   # Adds a new game to the catalog

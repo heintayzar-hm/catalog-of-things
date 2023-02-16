@@ -1,0 +1,74 @@
+[
+  {
+    "id": 928,
+    "on_spotify": "n",
+    "publish_date": "1998-04-01",
+    "genre_id": 2,
+    "label_id": 3,
+    "author_id": 1
+  },
+  {
+    "id": 484,
+    "on_spotify": true,
+    "publish_date": "2020-10-10",
+    "genre_id": 2,
+    "label_id": 1,
+    "author_id": 3
+  },
+  {
+    "id": 927,
+    "on_spotify": true,
+    "publish_date": "2000-10-10",
+    "genre_id": 1,
+    "label_id": 1,
+    "author_id": 2
+  },
+  {
+    "id": 774,
+    "on_spotify": "n",
+    "publish_date": "2000-10-10",
+    "genre_id": 1,
+    "label_id": 2,
+    "author_id": 3
+  },
+  {
+    "id": 846,
+    "on_spotify": false,
+    "publish_date": "2000-10-10",
+    "genre_id": 1,
+    "label_id": 1,
+    "author_id": 2
+  },
+  {
+    "id": 962,
+    "on_spotify": true,
+    "publish_date": "2000-10-10",
+    "genre_id": 2,
+    "label_id": 3,
+    "author_id": 2
+  },
+  {
+    "id": 162,
+    "on_spotify": false,
+    "publish_date": "2000-10-10",
+    "genre_id": 1,
+    "label_id": 2,
+    "author_id": 3
+  },
+  {
+    "id": 261,
+    "on_spotify": true,
+    "publish_date": "2000-10-10",
+    "genre_id": 2,
+    "label_id": 3,
+    "author_id": 1
+  },
+  {
+    "id": 754,
+    "on_spotify": true,
+    "publish_date": "2000-10-10",
+    "genre_id": 1,
+    "label_id": 3,
+    "author_id": 2
+  }
+]

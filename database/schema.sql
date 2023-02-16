@@ -1,0 +1,59 @@
+CREATE TABLE label (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  color VARCHAR(20) NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE author (
+  id SERIAL PRIMARY KEY,
+  first_name VARCHAR(255) NOT NULL,
+  last_name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE genre (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE books (
+  id SERIAL PRIMARY KEY,
+  publisher VARCHAR(500) NOT NULL,
+  cover_state VARCHAR(20) NOT NULL,
+  publish_date DATE NOT NULL,
+  archived BOOLEAN NOT NULL DEFAULT FALSE,
+  genre_id INTEGER NOT NULL REFERENCES genre(id),
+  author_id INTEGER NOT NULL REFERENCES author(id),
+  label_id INTEGER NOT NULL REFERENCES label(id),
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE music_album (
+  id SERIAL PRIMARY KEY,
+  archive BOOLEAN NOT NULL,
+  on_spotify BOOLEAN NOT NULL,
+  publish_date DATE,
+  genre_id INTEGER NOT NULL REFERENCES genre(id),
+  author_id INTEGER NOT NULL REFERENCES author(id),
+  label_id INTEGER NOT NULL REFERENCES label(id)
+);
+
+CREATE TABLE game (
+  id SERIAL PRIMARY KEY,
+  multiplayer BOOLEAN NOT NULL,
+  last_played TIMESTAMP NOT NULL,
+  publish_date DATE NOT NULL,
+  archived BOOLEAN NOT NULL DEFAULT FALSE,
+  genre_id INTEGER NOT NULL REFERENCES genre(id),
+  author_id INTEGER NOT NULL REFERENCES author(id),
+  label_id INTEGER NOT NULL REFERENCES label(id)
+);
+
+CREATE TABLE items (
+  id SERIAL PRIMARY KEY,
+  genre_id INTEGER NOT NULL REFERENCES genre(id),
+  author_id INTEGER NOT NULL REFERENCES author(id),
+  label_id INTEGER NOT NULL REFERENCES label(id),
+);

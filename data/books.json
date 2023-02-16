@@ -1,0 +1,74 @@
+[
+  {
+    "id": 890,
+    "publish_date": "Thu 10 Dec 2020",
+    "publisher": "user_one",
+    "cover_state": "covered",
+    "genre_id": 3,
+    "label_id": 1,
+    "author_id": 2
+  },
+  {
+    "id": 422,
+    "publish_date": "Tue 10 Oct 2000",
+    "publisher": "Hein",
+    "cover_state": "covered",
+    "genre_id": 2,
+    "label_id": 1,
+    "author_id": 1
+  },
+  {
+    "id": 6,
+    "publish_date": "Tue 10 Oct 2000",
+    "publisher": "Hein",
+    "cover_state": "bad",
+    "genre_id": 3,
+    "label_id": 2,
+    "author_id": 2
+  },
+  {
+    "id": 713,
+    "publish_date": "Tue 10 Oct 2000",
+    "publisher": "Hein",
+    "cover_state": "bad",
+    "genre_id": 3,
+    "label_id": 2,
+    "author_id": 2
+  },
+  {
+    "id": 645,
+    "publish_date": "Tue 10 Oct 2000",
+    "publisher": "Hein",
+    "cover_state": "bad",
+    "genre_id": 1,
+    "label_id": 1,
+    "author_id": 2
+  },
+  {
+    "id": 94,
+    "publish_date": "Tue 10 Oct 2000",
+    "publisher": "Hein",
+    "cover_state": "covered",
+    "genre_id": 3,
+    "label_id": 1,
+    "author_id": 2
+  },
+  {
+    "id": 3,
+    "publish_date": "Sun 10 Oct 1999",
+    "publisher": "Hein",
+    "cover_state": "bad",
+    "genre_id": 3,
+    "label_id": 1,
+    "author_id": 2
+  },
+  {
+    "id": 21,
+    "publish_date": "Tue 10 Oct 2000",
+    "publisher": "Hein",
+    "cover_state": "covered",
+    "genre_id": 3,
+    "label_id": 1,
+    "author_id": 3
+  }
+]

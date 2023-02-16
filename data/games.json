@@ -18,7 +18,6 @@
     "author_id": 2
   },
   {
-<<<<<<< HEAD
     "id": 578,
     "publish_date": "Tue 02 Feb 2010",
     "multiplayer": "no",
@@ -26,32 +25,5 @@
     "genre_id": 3,
     "label_id": 1,
     "author_id": 2
-=======
-    "id": 329,
-    "publish_date": "Wed 10 Oct 2001",
-    "multiplayer": "yes",
-    "last_played": "Tue 10 Oct 2000",
-    "genre_id": 2,
-    "label_id": 2,
-    "author_id": 1
-  },
-  {
-    "id": 594,
-    "publish_date": "Tue 10 Oct 2000",
-    "multiplayer": "yes",
-    "last_played": "Tue 10 Oct 2000",
-    "genre_id": 3,
-    "label_id": 2,
-    "author_id": 2
-  },
-  {
-    "id": 608,
-    "publish_date": "Tue 10 Oct 2000",
-    "multiplayer": "yes",
-    "last_played": "Tue 10 Oct 2000",
-    "genre_id": 3,
-    "label_id": 3,
-    "author_id": 3
->>>>>>> c74663d5a1ed564854a771baf0cac63a23a90952
   }
 ]

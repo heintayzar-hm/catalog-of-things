@@ -31,7 +31,6 @@ class BookModule
     end
   end
 
-
   def cover_state_handler(cover_state)
     return 'covered' if cover_state.downcase == 'y'
 

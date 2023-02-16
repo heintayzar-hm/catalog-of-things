@@ -18,7 +18,7 @@ class AuthorModule
     return puts red('There are no authors in the catalog') if @authors.empty?
 
     @authors.each_with_index do |author, index|
-      puts "#{blue((index + 1).to_s)}) Full Name: #{blue(author['first_name'] + " " + author['last_name'])}, " \
+      puts "#{blue((index + 1).to_s)}) Full Name: #{blue("#{author['first_name']} #{author['last_name']}")}, " \
     end
   end
 

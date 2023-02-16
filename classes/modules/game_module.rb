@@ -45,7 +45,6 @@ class GameModule
     'no'
   end
 
-
   # Adds a new game to the catalog
   def add_game
     puts 'Please enter the following information'

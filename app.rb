@@ -2,7 +2,10 @@ require_relative 'helper'
 
 class App
   def initialize
-    @books = BookModule.new
+    @labels = LabelModule.new
+    @authors = AuthorModule.new
+    @books = BookModule.new(@labels, @authors)
+    @games = GameModule.new(@labels, @authors)
   end
 
   attr_accessor :books
@@ -57,11 +60,27 @@ class App
     user_choice(user_input)
   end
 
+  def list_all_games
+    @games.send(:list_all_games)
+  end
+
+  def add_a_game
+    @games.send(:add_game)
+  end
+
+  def list_all_authors
+    @authors.send(:list_all_authors)
+  end
+
   def list_books
     @books.send(:list_all_books)
   end
 
   def add_a_book
     @books.send(:add_book)
+  end
+
+  def list_all_labels
+    @labels.send(:list_all_labels)
   end
 end
